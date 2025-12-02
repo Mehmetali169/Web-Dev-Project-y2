@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Drone X500",
+      "description": "A professional-grade drone with 4k camera.",
+      "price": 1299.99,
+      "category": "Drones",
+      "image": "/images/drone-x500.png",
+      "stock": 12,
+      "rating": 4.7
+    },
+    {
+      "id": 2,
+      "name": "AeroCam Pro Lens",
+      "description": "High-precision lens for aerial photography.",
+      "price": 249.99,
+      "category": "Accessories",
+      "image": "/images/aerocam-lens.png",
+      "stock": 30,
+      "rating": 4.5
+    }
+  ]
+}
