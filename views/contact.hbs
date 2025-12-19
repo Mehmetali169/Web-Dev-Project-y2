@@ -1,25 +1,40 @@
 <html>
-    <body>
-        <div class="container">
-               <h1>Contact us</h1>
-        <form action="submission" name=commentForm method="GET">
-<div class="mb-3">
-   <label for="emailAddress" class="form-label">Your Email</label>
-   <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="name@example">
+<body>
+      <div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <div class="border rounded p-4 shadow-lg">
+        <h1 class="display-2  text-primary mb-4">CONTACT US.</h1>
+
+        <form action="submission" name="commentForm" method="GET">
+
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="name@example">
+          </div>
+
+          <div class="mb-3">
+            <label for="Name" class="form-label">Your Name</label>
+            <textarea class="form-control" id="Name" name="userName" placeholder="john Doe" rows="1"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="comment" class="form-label">Your Comment</label>
+            <textarea class="form-control" id="comment" name="userComment" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Submit (GET)</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
 </div>
-<div class="mb-3">
-<label for="Name" class="form-label">Your Name</label>
-<textarea class="form-control" id="Name" name="userName" placeholder="john Doe" rows="1"></textarea>
-</div>
-<div class="mb-3">
-<label for="comment" class="form-label">Your Comment</label>
-<textarea class="form-control" id="comment" name="userComment" rows="3"></textarea>
-</div>
-<button type="submit" class="btn btn-danger">Submit (GET)</button>
-</form>
-        </div>
+
 <script src="/app.js"></script>
 <script src="/custom.js"></script>
-    </body>
+</body>
 </html>
-<h1>Contact us</h1>

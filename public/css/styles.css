@@ -1,5 +1,22 @@
-#Navbar1 {
-position: fixed;
-z-index: 1000;         
-width: 100%;
+
+body {
+    background-image: url('/images/Gemini_Generated_Image_cgm5gpcgm5gpcgm5.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
 }
+.card,.border {
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+
+}
+.hero-title {
+  letter-spacing: -5px;
+  line-height: 0.8;
+}
+h1
+{
+  letter-spacing: -5px; line-height: 0.8;
+}
+

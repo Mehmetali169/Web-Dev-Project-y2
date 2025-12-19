@@ -56,6 +56,26 @@ function checkLoginStatus() {
     } 
 
 }
+// Bootstrp code (POP UP) link toast 
+const toastTrigger = document.getElementById('addtocart')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+
+// Boostrap code Modal
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+
+
 
 
 

@@ -19,7 +19,12 @@ checkout.addEventListener("click", () => {
     var cardcvv=document.getElementById('cardCvv').value;
 
     if (cardnumber=="1234 5678 9102 3456" && cardcvv=="123") {
-        alert("payment success");
+        const toastLiveExample = document.getElementById('paymentToast');
+
+        if (toastLiveExample) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+            toastBootstrap.show(); 
+        }
         var element = document.getElementById("payment-failure");
         element.style.display = 'none';
         //element.classList.add("d-none"); // bootstrap hide
@@ -32,7 +37,13 @@ checkout.addEventListener("click", () => {
         localStorage.setItem('checkout',total); 
 
     } else {
-        alert("payment failure");
+
+        const toastLiveExample = document.getElementById('paymentToastfail');
+
+        if (toastLiveExample) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+            toastBootstrap.show(); 
+        }
         var element = document.getElementById("payment-failure");
         element.style.display = 'block';
         var element = document.getElementById("payment-success");
